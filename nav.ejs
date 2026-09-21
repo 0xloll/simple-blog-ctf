@@ -1,0 +1,1 @@
+<nav><a class="brand" href="/">PaperTrail<span>_</span></a><span></span><% if (user) { %><span class="nav-user">~/ <%= user.username %></span><form id="logout-form" method="post" action="/logout"><button class="nav-button">Logout</button></form><% } else { %><a href="/login">Login</a><a href="/register">Register</a><% } %></nav>
